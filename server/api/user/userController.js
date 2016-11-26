@@ -66,3 +66,7 @@ exports.delete = function(req, res, next) {
     }
   });
 };
+
+exports.me = function(req, res, next) {
+  res.json(req.user.toJson())
+}
